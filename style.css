@@ -127,7 +127,7 @@
   width: 100%;
 }
 
-.posts-conferences {
+.posts-evenements {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -138,7 +138,7 @@
   margin-bottom: 3em;
 }
 
-.texte-conferences {
+.texte-evenements {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
