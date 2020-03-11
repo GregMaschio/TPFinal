@@ -308,9 +308,6 @@ a {
 }
 
 @media only screen and (max-width: 600px) {
-  #primary-menu {
-    display: none;
-  }
   #btnMenu {
     display: block;
     color: black;
@@ -334,9 +331,6 @@ a {
     position: fixed;
     right: 5%;
     display: none;
-  }
-  #checkMenu:checked ~ #primary-menu {
-    display: block;
   }
   #checkMenu:checked ~ #btnMenu {
     color: white;

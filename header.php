@@ -26,12 +26,6 @@
 
 	<header id="masthead" class="site-header">
 		<div class="site-branding">
-		<input id="checkMenu" type="checkbox">
-        <label id="btnMenu" for="checkMenu">
-            <span class="nav-icon">
-                <span></span>
-            </span>
-        </label>
 			<?php
 			the_custom_logo();
 			if ( is_front_page() && is_home() ) :
@@ -58,6 +52,12 @@
 				'menu_id'        => 'primary-menu',
 			) );
 			?>
+			<input id="checkMenu" type="checkbox">
+			<label id="btnMenu" for="checkMenu">
+			<span class="nav-icon">
+			<span></span>
+			</span>
+			</label>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 
