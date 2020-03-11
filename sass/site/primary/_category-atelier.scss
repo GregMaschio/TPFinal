@@ -1,0 +1,47 @@
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.texteRouge {
+    color:red;
+}
+
+.texteBleu {
+    color: blue;
+}
+
+.conteneur-atelier {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(11, 1fr);
+  }
+
+
+.posts-atelier, .conteneur-atelier h3 {
+    border: 1px solid grey;
+}
+
+.posts-atelier p, .conteneur-atelier h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+$couleurBase: #105f1b;
+
+.auteurcouleur6 {
+    background-color: $couleurBase;
+}
+
+.auteurcouleur17{
+    background-color: lighten($couleurBase, 20%);
+}
+
+.auteurcouleur10 {
+    background-color: lighten($couleurBase, 30%);
+}
+
+.auteurcouleur13 {
+    background-color: lighten($couleurBase, 50%);
+}

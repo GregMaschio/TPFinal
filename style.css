@@ -1,0 +1,318 @@
+@charset "UTF-8";
+/*
+ Theme Name:   TpFinal
+ Theme URI:    http://example.com/twenty-fifteen-child/
+ Description:  Underscores Child Theme
+ Author:       Grégoire Maschio
+ Author URI:   http://example.com
+ Template:     underscores
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  TpFinal
+*/
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Normalize
+# Typography
+# Elements
+# Forms
+# Navigation
+	## Links
+	## Menus
+# Accessibility
+# Alignments
+# Clearings
+# Widgets
+# Content
+	## Posts and pages
+	## Comments
+# Infinite scroll
+# Media
+	## Captions
+	## Galleries
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+@import "variables-site/variables-site";
+@import "mixins/mixins-master";
+
+
+# Normalize
+--------------------------------------------------------------
+@import "normalize";
+
+--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------
+@import "typography/typography";
+
+--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------
+@import "elements/elements";
+
+--------------------------------------------------------------
+# Forms
+--------------------------------------------------------------
+@import "forms/forms";
+
+--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------
+@import "navigation/navigation";
+
+--------------------------------------------------------------
+# Accessibility
+--------------------------------------------------------------
+@import "modules/accessibility";
+
+--------------------------------------------------------------
+# Alignments
+--------------------------------------------------------------
+@import "modules/alignments";
+
+--------------------------------------------------------------
+# Clearings
+--------------------------------------------------------------
+@import "modules/clearings";
+
+--------------------------------------------------------------
+# Widgets
+--------------------------------------------------------------
+@import "site/secondary/widgets";
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Posts and pages
+--------------------------------------------------------------*/
+.sticky {
+  display: block;
+}
+
+.post,
+.page {
+  margin: 0 0 1.5em;
+}
+
+.updated:not(.published) {
+  display: none;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+  margin: 1.5em 0 0;
+}
+
+.page-links {
+  clear: both;
+  margin: 0 0 1.5em;
+}
+
+#primary-menu, .menu, .nav-menu {
+  display: block;
+}
+
+.post-thumbnail:first-of-type {
+  width: 100%;
+  height: 30vh;
+  overflow: hidden;
+}
+
+.post-thumbnail > img:first-of-type {
+  width: 100%;
+}
+
+.posts-conferences {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 3em;
+}
+
+.texte-conferences {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 70vw;
+  margin-left: 2em;
+}
+
+.conteneur-nouvelles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.posts-nouvelles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/*--------------------------------------------------------------
+## Nouvelle
+--------------------------------------------------------------*/
+.posts-nouvelle2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 3em;
+}
+
+.texte-nouvelle2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 70vw;
+  margin-left: 2em;
+}
+
+.texte-nouvelle2 button {
+  width: 8vw;
+  background-color: #8cff8c;
+  border: none;
+  height: 3vh;
+}
+
+.texte-nouvelle2 button:focus {
+  background-color: #ff5656;
+}
+
+/*--------------------------------------------------------------
+## Evenements
+--------------------------------------------------------------*/
+.conteneur-evenements {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-areas: ". . ." ". . ." ". . ." ". . ." ". . ." ". . ." ". . ." ". . ." ". . ." ". . ." ". . ." ". . ." ". . ." ". . ." ". . ." ". . ." ". . ." ". . ." ". . ." ". . ." ". . ." ". . ." ". . ." ". . ." ". . ." ". . ." ". . ." ". . ." ". . .";
+}
+
+.conteneur-evenements h3 {
+  border: 1px solid grey;
+}
+
+/*--------------------------------------------------------------
+## Atelier
+--------------------------------------------------------------*/
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.texteRouge {
+  color: red;
+}
+
+.texteBleu {
+  color: blue;
+}
+
+.conteneur-atelier {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (1fr)[11];
+      grid-template-rows: repeat(11, 1fr);
+}
+
+.posts-atelier, .conteneur-atelier h3 {
+  border: 1px solid grey;
+}
+
+.posts-atelier p, .conteneur-atelier h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.auteurcouleur6 {
+  background-color: #105f1b;
+}
+
+.auteurcouleur17 {
+  background-color: #1fb634;
+}
+
+.auteurcouleur10 {
+  background-color: #2cdc45;
+}
+
+.auteurcouleur13 {
+  background-color: #84ea92;
+}
+
+/*--------------------------------------------------------------
+## Comments
+--------------------------------------------------------------*/
+.comment-content a {
+  word-wrap: break-word;
+}
+
+.bypostauthor {
+  display: block;
+}
+
+#primary-menu, .menu, .nav-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+/*--------------------------------------------------------------
+# Infinite scroll
+--------------------------------------------------------------
+@import "modules/infinite-scroll";
+
+--------------------------------------------------------------
+# Media
+--------------------------------------------------------------
+@import "media/media";
+--------------------------------------------------------------*/
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,23 @@
+.posts-nouvelle2 {
+	display:flex;
+	flex-direction: row;
+	margin-bottom:3em;
+}
+
+.texte-nouvelle2{
+	display:flex;
+	flex-direction: column;
+	width:70vw;
+	margin-left: 2em;
+}
+
+.texte-nouvelle2 button {
+    width:8vw;
+    background-color:rgb(140, 255, 140);
+    border:none;
+    height:3vh;
+}
+
+.texte-nouvelle2 button:focus{
+    background-color:rgb(255, 86, 86);
+}
