@@ -60,8 +60,7 @@ get_header();
             "category_name" => "evenement",
             "posts_per_page" =>  3,
             "orderby" => "date",
-            "order" => "DSC",
-            'nopaging' => true
+            "order" => "DSC"
         );
         $query1 = new WP_Query( $args );
         
