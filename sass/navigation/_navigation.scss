@@ -1,0 +1,72 @@
+    
+@media only screen and (max-width: 600px) {
+
+    #primary-menu {
+        display: none;
+    }
+    #btnMenu {
+        display: block;
+        color: black;
+        font-size: 2.5rem;
+        transform-origin: 50% 60%;
+        user-select: none;
+        position: fixed;
+        transition: transform 1s;
+        right: 5%;
+        cursor: pointer;
+        z-index: 3;
+    }
+    
+    #checkMenu {
+        position: fixed;
+        right: 5%;
+        display: none;
+    }
+
+    #checkMenu:checked~#primary-menu {
+        display: block;
+    }
+    
+
+    
+    #checkMenu:checked~#btnMenu {
+        color: white;
+        
+    
+        .nav-icon:after,
+        .nav-icon:before,
+        .nav-icon span {
+            background: black;
+        }
+        /* Animation du menu burger on click*/
+        .nav-icon:before {
+            transform: translateY(12px) rotate(135deg);
+        }
+    
+        .nav-icon:after {
+            transform: translateY(-12px) rotate(-135deg);
+        }
+    
+        .nav-icon span {
+            transform: scale(0);
+        }
+    }
+    
+    .nav-icon {
+        width: 2.5rem;
+        animation: fade-in 1s;
+        display: block;
+    }
+    /* creation du menu burger after le after et before*/
+    .nav-icon:after,
+    .nav-icon:before,
+    .nav-icon span {
+        background-color: black;
+        border-radius: 3px;
+        content: '';
+        display: block;
+        height: 5px;
+        margin: 7px 0;
+        transition: all .2s ease-in-out;
+    }
+  }

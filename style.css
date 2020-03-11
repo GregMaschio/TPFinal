@@ -307,6 +307,79 @@ a {
       justify-content: space-around;
 }
 
+@media only screen and (max-width: 600px) {
+  #primary-menu {
+    display: none;
+  }
+  #btnMenu {
+    display: block;
+    color: black;
+    font-size: 2.5rem;
+    -webkit-transform-origin: 50% 60%;
+            transform-origin: 50% 60%;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    position: fixed;
+    -webkit-transition: -webkit-transform 1s;
+    transition: -webkit-transform 1s;
+    transition: transform 1s;
+    transition: transform 1s, -webkit-transform 1s;
+    right: 5%;
+    cursor: pointer;
+    z-index: 3;
+  }
+  #checkMenu {
+    position: fixed;
+    right: 5%;
+    display: none;
+  }
+  #checkMenu:checked ~ #primary-menu {
+    display: block;
+  }
+  #checkMenu:checked ~ #btnMenu {
+    color: white;
+    /* Animation du menu burger on click*/
+  }
+  #checkMenu:checked ~ #btnMenu .nav-icon:after,
+  #checkMenu:checked ~ #btnMenu .nav-icon:before,
+  #checkMenu:checked ~ #btnMenu .nav-icon span {
+    background: black;
+  }
+  #checkMenu:checked ~ #btnMenu .nav-icon:before {
+    -webkit-transform: translateY(12px) rotate(135deg);
+            transform: translateY(12px) rotate(135deg);
+  }
+  #checkMenu:checked ~ #btnMenu .nav-icon:after {
+    -webkit-transform: translateY(-12px) rotate(-135deg);
+            transform: translateY(-12px) rotate(-135deg);
+  }
+  #checkMenu:checked ~ #btnMenu .nav-icon span {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  .nav-icon {
+    width: 2.5rem;
+    -webkit-animation: fade-in 1s;
+            animation: fade-in 1s;
+    display: block;
+  }
+  /* creation du menu burger after le after et before*/
+  .nav-icon:after,
+  .nav-icon:before,
+  .nav-icon span {
+    background-color: black;
+    border-radius: 3px;
+    content: '';
+    display: block;
+    height: 5px;
+    margin: 7px 0;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+  }
+}
+
 /*--------------------------------------------------------------
 # Infinite scroll
 --------------------------------------------------------------
