@@ -1,9 +1,10 @@
-    
+
 @media only screen and (max-width: 600px) {
 
-    #primary-menu {
-        display: none;
-    }
+    // .menu-menu-container {
+    //     opacity: 0;
+    // }
+
     #btnMenu {
         display: block;
         color: black;
@@ -22,12 +23,9 @@
         right: 5%;
         display: none;
     }
-
-    #checkMenu:checked~#primary-menu {
-        display: block;
-    }
-    
-
+    // #checkMenu:checked~.menu-menu-container{
+    //     opacity: 1;
+    // }
     
     #checkMenu:checked~#btnMenu {
         color: white;
