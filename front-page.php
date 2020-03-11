@@ -58,9 +58,10 @@ get_header();
         // The Query
         $args = array(
             "category_name" => "evenement",
-            "posts_per_page" => 3,
+            "posts_per_page" =>  3,
             "orderby" => "date",
-            "order" => "ASC"
+            "order" => "DSC",
+            'nopaging' => true
         );
         $query1 = new WP_Query( $args );
         
