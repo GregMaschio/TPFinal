@@ -46,18 +46,18 @@
 
 		<nav id="site-navigation" class="main-navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'underscores' ); ?></button>
-			<?php
-			wp_nav_menu( array(
-				'theme_location' => 'menu-1',
-				'menu_id'        => 'primary-menu',
-			) );
-			?>
 			<input id="checkMenu" type="checkbox">
 			<label id="btnMenu" for="checkMenu">
 			<span class="nav-icon">
 			<span></span>
 			</span>
 			</label>
+			<?php
+			wp_nav_menu( array(
+				'theme_location' => 'menu-1',
+				'menu_id'        => 'primary-menu',
+			) );
+			?>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 

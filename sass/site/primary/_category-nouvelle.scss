@@ -21,3 +21,7 @@
 .texte-nouvelle2 button:focus{
     background-color:rgb(255, 86, 86);
 }
+
+.posts-nouvelles {
+	animation:scale-in-center .5s cubic-bezier(.25,.46,.45,.94) both
+}
