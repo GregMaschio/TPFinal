@@ -1,7 +1,8 @@
 window.addEventListener("load",function(){
     let collectionBtnNouvelle = document.querySelectorAll(".BtnLireSuite");
     let collectionNouvelle = document.querySelectorAll(".division-vide");
-    console.log(collectionBtnNouvelle.length);
+    var leburger = document.getElementById("checkMenu");
+    console.log(leburger);
 
 
 if (collectionBtnNouvelle)
@@ -10,7 +11,11 @@ if (collectionBtnNouvelle)
             console.log(btn.id)
             btn.addEventListener('click',Ajax)
     }
+    leburger.click = function() {
+        console.log("hello");
+    };
 }
+
 });
 
 function Ajax(evt) {
@@ -50,6 +55,18 @@ function creationHTML(postsData){
     }
     contenuNouvelle.innerHTML = monHtmlString; 
 }
+
+
+jQuery(document).ready(function() {
+    jQuery('#checkMenu').click(function(e) {
+        jQuery('#primary-menu').css("display","none");
+ 
+        e.preventDefault();
+    });
+    
+});
+
+
 
 
 

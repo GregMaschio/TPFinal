@@ -1,9 +1,21 @@
 
+$base-color: #036;
+
+@for $i from 1 through 3 {
+  ul:nth-child(1 + #{$i}) {
+    color: lighten($base-color, $i * 5%);
+  }
+}
+
+
+
+
 @media only screen and (max-width: 600px) {
 
-    // .menu-menu-container {
-    //     opacity: 0;
-    // }
+    #primary-menu {
+        display: none;
+    }
+
 
     #btnMenu {
         display: block;
@@ -23,9 +35,9 @@
         right: 5%;
         display: none;
     }
-    // #checkMenu:checked~.menu-menu-container{
-    //     opacity: 1;
-    // }
+    #checkMenu:checked~#primary-menu{
+        display: flex;
+    }
     
     #checkMenu:checked~#btnMenu {
         color: white;
