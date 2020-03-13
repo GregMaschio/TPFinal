@@ -4,9 +4,6 @@
     display: none;
 }
 
-a:visited {
-    color: black;
-}
 
 #primary-menu {
     animation:slide-in-right .5s cubic-bezier(.25,.46,.45,.94) both
@@ -14,7 +11,7 @@ a:visited {
 
 @media only screen and (max-width: 600px) {
 
-   .menu-menu-container {
+   .menu-menuplease-container {
         display: none;
     }
 
@@ -35,7 +32,7 @@ a:visited {
         z-index: 3;
     }
     
-    #checkMenu:checked~.menu-menu-container{
+    #checkMenu:checked~.menu-menuplease-container{
         display: block;
     }
     
