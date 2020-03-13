@@ -4,6 +4,8 @@
     "sources": [
         "sass/style.scss",
         "sass/mixins/_mixins-master.scss",
+        "sass/_extend.scss",
+        "sass/_variable.scss",
         "sass/typography/_typography.scss",
         "sass/site/_site.scss",
         "sass/site/primary/_posts-and-pages.scss",
