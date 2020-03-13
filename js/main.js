@@ -57,15 +57,6 @@ function creationHTML(postsData){
 }
 
 
-jQuery(document).ready(function() {
-    jQuery('#checkMenu').click(function(e) {
-        jQuery('#primary-menu').css("display","none");
- 
-        e.preventDefault();
-    });
-    
-});
-
 
 
 

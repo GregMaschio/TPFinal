@@ -1,21 +1,26 @@
-
-$base-color: #036;
-
-@for $i from 1 through 3 {
-  ul:nth-child(1 + #{$i}) {
-    color: lighten($base-color, $i * 5%);
-  }
+#checkMenu {
+    position: fixed;
+    right: 5%;
+    display: none;
 }
 
+a:visited {
+    color: black;
+}
 
-
+#primary-menu {
+    animation:slide-in-right .5s cubic-bezier(.25,.46,.45,.94) both
+}
 
 @media only screen and (max-width: 600px) {
 
-    #primary-menu {
+   .menu-menu-container {
         display: none;
     }
 
+    .menu-toggle {
+        display: none;
+    }
 
     #btnMenu {
         display: block;
@@ -23,20 +28,15 @@ $base-color: #036;
         font-size: 2.5rem;
         transform-origin: 50% 60%;
         user-select: none;
-        position: fixed;
+        position: absolute;
         transition: transform 1s;
-        right: 5%;
+        right: 0%;
         cursor: pointer;
         z-index: 3;
     }
     
-    #checkMenu {
-        position: fixed;
-        right: 5%;
-        display: none;
-    }
-    #checkMenu:checked~#primary-menu{
-        display: flex;
+    #checkMenu:checked~.menu-menu-container{
+        display: block;
     }
     
     #checkMenu:checked~#btnMenu {
