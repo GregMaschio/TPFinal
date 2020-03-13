@@ -184,6 +184,24 @@ a {
           align-items: center;
 }
 
+.site-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#colophon {
+  background: black;
+  height: 20vh;
+}
+
 /*--------------------------------------------------------------
 ## Nouvelle
 --------------------------------------------------------------*/
@@ -316,7 +334,22 @@ a {
       justify-content: space-around;
 }
 
+ul:nth-child(1 + 1) {
+  color: #004080;
+}
+
+ul:nth-child(1 + 2) {
+  color: #004d99;
+}
+
+ul:nth-child(1 + 3) {
+  color: #0059b3;
+}
+
 @media only screen and (max-width: 600px) {
+  #primary-menu {
+    display: none;
+  }
   #btnMenu {
     display: block;
     color: black;
@@ -340,6 +373,11 @@ a {
     position: fixed;
     right: 5%;
     display: none;
+  }
+  #checkMenu:checked ~ #primary-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   #checkMenu:checked ~ #btnMenu {
     color: white;
